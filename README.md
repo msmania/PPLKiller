@@ -15,6 +15,7 @@ It has been brought to my attention that Windows 10 RS2 ('Redstone 2', 'Creator'
 # Compiling
 1. Install the [WDK](https://go.microsoft.com/fwlink/?linkid=2026156).
 2. Open the solution file and compile.
+3. If your Visual Studio is not integrated with WDK for some reason, or if you just prefer CUI, open "[x64|x86] Native Tools Command Prompt for VS" and run `NMAKE` on the root of this repo.  Binaries will be generated under `bin\[amd64|x86]`.
 
 # Installation
 1. Make sure test signing is enabled (`bcdedit /set testsigning on`), or alternatively, that you are a millionaire and have a Windows EV signing certificate.
